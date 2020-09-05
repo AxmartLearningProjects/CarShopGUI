@@ -39,6 +39,18 @@ namespace CarShopGUI
 
         private void btn_add_to_cart_Click(object sender, EventArgs e)
         {
+            // get the selected item from the inventory
+
+            Car selected = (Car)lst_inventory.SelectedItem;
+
+
+            // add item to the cart
+
+            myStore.ShoppingList.Add(selected);
+            cartBindingSource.ResetBindings(false);
+
+
+
 
         }
 
@@ -52,6 +64,11 @@ namespace CarShopGUI
             carInventoryBindingSource.DataSource = myStore.CarList;
             lst_inventory.DataSource = carInventoryBindingSource;
             lst_inventory.DisplayMember = ToString();
+
+            cartBindingSource.DataSource = myStore.ShoppingList;
+            lst_cart.DataSource = cartBindingSource;
+            lst_cart.DisplayMember = ToString();
+
 
 
         }
