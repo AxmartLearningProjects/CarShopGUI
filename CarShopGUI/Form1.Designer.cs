@@ -112,6 +112,7 @@
             this.txt_price.Name = "txt_price";
             this.txt_price.Size = new System.Drawing.Size(100, 20);
             this.txt_price.TabIndex = 5;
+            this.txt_price.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_price_KeyPress);
             // 
             // btn_create_car
             // 
