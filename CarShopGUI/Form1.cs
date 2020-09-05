@@ -57,6 +57,11 @@ namespace CarShopGUI
         private void btn_checkout_Click(object sender, EventArgs e)
         {
 
+            decimal total = myStore.Checkout();
+            lbl_total.Text = total.ToString();
+
+            cartBindingSource.ResetBindings(false);
+
         }
 
         private void Form1_Load(object sender, EventArgs e)

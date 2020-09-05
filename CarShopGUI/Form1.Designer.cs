@@ -115,7 +115,7 @@
             // 
             // btn_create_car
             // 
-            this.btn_create_car.Location = new System.Drawing.Point(51, 127);
+            this.btn_create_car.Location = new System.Drawing.Point(53, 137);
             this.btn_create_car.Name = "btn_create_car";
             this.btn_create_car.Size = new System.Drawing.Size(75, 23);
             this.btn_create_car.TabIndex = 6;
@@ -193,9 +193,9 @@
             this.lbl_total.AutoSize = true;
             this.lbl_total.Location = new System.Drawing.Point(672, 408);
             this.lbl_total.Name = "lbl_total";
-            this.lbl_total.Size = new System.Drawing.Size(35, 13);
+            this.lbl_total.Size = new System.Drawing.Size(28, 13);
             this.lbl_total.TabIndex = 6;
-            this.lbl_total.Text = "label5";
+            this.lbl_total.Text = "0.00";
             // 
             // Form1
             // 
